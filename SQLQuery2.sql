@@ -43,3 +43,8 @@ select nm_socio, nm_dependente from tb_socios, dependentes
 /*Forma correta*/
 select nm_socio, nm_dependente from tb_socios, dependentes where tb_socios.cd_socio = dependentes.cd_socio
 
+select * from tb_socios
+select max(cd_socio) from tb_socios /*Consulta o valor maximo*/
+select min(cd_socio) from tb_socios /*Consulta o valor minimo*/
+select avg(cd_socio) from tb_socios /*Consulta o valor médio*/
+select sum(cd_socio) from tb_socios /*Consulta a soma*/
